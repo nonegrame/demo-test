@@ -19,5 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('add', 'DemoController@addAction');
 
+Route::get('error', 'DemoController@exceptionAction');
 
 Route::get('db', 'DemoController@dbAction');
